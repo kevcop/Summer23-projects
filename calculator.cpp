@@ -8,6 +8,18 @@ int addNums(int a, int b){
     cout<<a+b<<endl;
     return a+b;
 }
+int subNums(int a,int b){
+    cout<<a-b<<endl;
+    return a-b;
+}
+int divideNums(int a,int b){
+    cout<<a/b<<endl;
+    return a/b;
+}
+int multNums(int a,int b){
+    cout<<a*b<<endl;
+    return a*b;
+}
 
 int main(){
     int userInput1 = 0;
@@ -27,7 +39,19 @@ int main(){
         result = addNums(userInput1,userInput2);
         cout<<result<<endl;
         break;
+        case 2:
+        cout<<"Subtraction has been chosen!"<<endl;
+        result = subNums(userInput1,userInput2);
+        cout<<"The answer is: "<<result<<endl;
     default:
+    case 3:
+    cout<<"Division has been chosen"<<endl;
+    result = divideNums(userInput1,userInput2);
+    cout<<"the answer is: "<<result<<endl;
         break;
-    }
+        case 4:
+        cout<<"Multiplication has been chosen"<<endl;
+        result = multNums(userInput1,userInput2);
+        cout<<"The product is: "<<result<<endl;
+}
 }
